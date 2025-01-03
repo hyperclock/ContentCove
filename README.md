@@ -5,7 +5,7 @@ ContentCove is an open-source CMS built using the Symfony Framework, designed fo
 ## Getting Started
 
 ### Prerequisites
-- PHP 7.4 or higher
+- PHP 8.1 or higher
 - Composer
 - Node.js and npm
 - MySQL/MariaDB

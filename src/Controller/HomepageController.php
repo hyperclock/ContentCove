@@ -11,8 +11,6 @@ class HomepageController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
-        return $this->render('homepage/index.html.twig', [
-            'welcome_message' => 'Welcome to the ContentCove CMS',
-        ]);
+        return $this->render('homepage/index.html.twig');
     }
 }

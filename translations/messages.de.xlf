@@ -30,6 +30,18 @@
                 <source>locale_german</source>
                 <target>Deutsch</target>
             </trans-unit>
+            <trans-unit id="locale_french">            
+                <source>locale_french</source>
+                <target>French</target>
+            </trans-unit>
+            <trans-unit id="locale_spanish">            
+                <source>locale_spanish</source>
+                <target>Spanish</target>
+            </trans-unit>
+            <trans-unit id="locale_italian">            
+                <source>locale_italian</source>
+                <target>Italian</target>
+            </trans-unit>
             <trans-unit id="copyright_title">            
                 <source>copyright_title</source>
                 <target>ContentCove CMS</target>

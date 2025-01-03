@@ -28,6 +28,4 @@ app_verify_email:
     path: /verify/email
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\LoginController::verify/email
-
-
-
+#

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="en" datatype="plaintext" original="messages.en.xlf">
+    <file source-language="en" target-language="it" datatype="plaintext" original="messages.en.xlf">
         <body>
             <trans-unit id="blog_title">            
                 <source>blog_title</source>
@@ -16,31 +16,31 @@
             </trans-unit>
             <trans-unit id="nav_about">
             	<source>nav_about</source>
-            	<target>About Us</target>
+            	<target>Chi siamo</target>
             </trans-unit>
             <trans-unit id="nav_contact">
             	<source>nav_contact</source>
-            	<target>Contact</target>
+            	<target>Contatti</target>
             </trans-unit>
             <trans-unit id="locale_english">            
                 <source>locale_english</source>
-                <target>English</target>
+                <target>Inglese</target>
             </trans-unit>
             <trans-unit id="locale_german">            
                 <source>locale_german</source>
-                <target>German</target>
+                <target>Tedesco</target>
             </trans-unit>
             <trans-unit id="locale_french">            
                 <source>locale_french</source>
-                <target>French</target>
+                <target>Francese</target>
             </trans-unit>
             <trans-unit id="locale_spanish">            
                 <source>locale_spanish</source>
-                <target>Spanish</target>
+                <target>Spagnolo</target>
             </trans-unit>
             <trans-unit id="locale_italian">            
                 <source>locale_italian</source>
-                <target>Italian</target>
+                <target>Italiano</target>
             </trans-unit>
             <trans-unit id="copyright_title">            
                 <source>copyright_title</source>
@@ -48,7 +48,7 @@
             </trans-unit>
             <trans-unit id="footer_mail_name">            
                 <source>footer_mail_name</source>
-                <target>contact</target>
+                <target>contatti</target>
             </trans-unit>
             <trans-unit id="footer_mail_domain">            
                 <source>footer_mail_domain</source>
@@ -60,7 +60,7 @@
             </trans-unit>
             <trans-unit id="legal_terms">            
                 <source>legal_terms</source>
-                <target>Terms and Service</target>
+                <target>Termini e servizio</target>
             </trans-unit>
             <trans-unit id="legal_disclaimer">            
                 <source>legal_disclaimer</source>
@@ -68,15 +68,15 @@
             </trans-unit> 
             <trans-unit id="legal_privacy">            
                 <source>legal_privacy</source>
-                <target>Privacy Policy</target>
+                <target>Informativa sulla privacy</target>
             </trans-unit> 
             <trans-unit id="legal_trademarks">            
                 <source>legal_trademarks</source>
-                <target>Trademarks and Licenses</target>
+                <target>Marchi e licenze</target>
             </trans-unit>
             <trans-unit id="legal_imprint">            
                 <source>legal_imprint</source>
-                <target>Imprint</target>
+                <target>Impronta</target>
             </trans-unit>
         </body>
     </file>

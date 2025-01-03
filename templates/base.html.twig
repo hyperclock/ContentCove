@@ -29,20 +29,27 @@
                     {% block navigation %}
                         <nav>
                         <!-- Lang Switcher Dropdown -->
-                            <nav>
-                                <ul>
+                                <ul class="nav-left">
                                     <li>
-                                        <a href="{{ path('switch_language', { locale: 'en' }) }}"><img src="{{ asset('assets/images/flags/us.png') }}"> English</a>
+                                        <a href="{{ path('switch_language', { locale: 'en' }) }}"><img src="{{ asset('assets/images/flags/us.png') }}"> {{ 'locale_english'|trans }}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ path('switch_language', { locale: 'de' }) }}"><img src="{{ asset('assets/images/flags/de.png') }}"> Deutsch</a>
+                                        <a href="{{ path('switch_language', { locale: 'de' }) }}"><img src="{{ asset('assets/images/flags/de.png') }}"> {{ 'locale_german'|trans }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('switch_language', { locale: 'fr' }) }}"><img src="{{ asset('assets/images/flags/fr.png') }}"> {{ 'locale_french'|trans }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('switch_language', { locale: 'es' }) }}"><img src="{{ asset('assets/images/flags/es.png') }}"> {{ 'locale_spanish'|trans }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('switch_language', { locale: 'it' }) }}"><img src="{{ asset('assets/images/flags/it.png') }}"> {{ 'locale_italian'|trans }}</a>
                                     </li>
                                 </ul>
-                            </nav>
-                        <!-- END - Lang Switch Dropdown -->
+                        <!-- END - Lang Switcher Dropdown -->
 
                             <ul class="navigation">
-                                <li><a href="#">{{ 'nav_home'|trans }}</a></li>
+                                <li><a href="{{ path('app_home') }}">{{ 'nav_home'|trans }}</a></li>
                                 <li><a href="#">{{ 'nav_about'|trans }}</a></li>
                                 <li><a href="#">{{ 'nav_contact'|trans }}</a></li>
                             </ul>
