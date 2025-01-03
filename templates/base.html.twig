@@ -29,7 +29,16 @@
                     {% block navigation %}
                         <nav>
                         <!-- Lang Switcher Dropdown -->
-
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('switch_language', { locale: 'en' }) }}"><img src="{{ asset('assets/images/flags/us.png') }}"> English</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('switch_language', { locale: 'de' }) }}"><img src="{{ asset('assets/images/flags/de.png') }}"> Deutsch</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         <!-- END - Lang Switch Dropdown -->
 
                             <ul class="navigation">

@@ -11,6 +11,7 @@ framework:
         handler_id: null
         cookie_secure: auto
         cookie_samesite: lax
+        enabled: true
 
     #esi: true
     #fragments: true
@@ -22,3 +23,6 @@ when@test:
         test: true
         session:
             storage_factory_id: session.storage.factory.mock_file
+
+parameters:
+    locale: en
