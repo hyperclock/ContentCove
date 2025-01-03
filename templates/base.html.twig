@@ -56,44 +56,14 @@
  
             <div id="footer">
                 {% block footer %}
-               {{ 'copyright_title'|trans }} &copy; 2024-{{ "now" | date("Y") }} <a href="mailto://{{ 'footer_mail_name'|trans }}@{{ 'footer_mail_domain'|trans }}">{{ 'copyright_name'|trans }}</a>
+               {{ 'copyright_title'|trans }} &copy; 2024-{{ "now" | date("Y") }} <a href="mailto://{{ 'footer_mail_name'|trans }}@{{ 'footer_mail_domain'|trans }}">{{ 'copyright_name'|trans }}</a> | ContentCove::An opensource CMS project
                     <br><br>
-<a href="#">{{ 'legal_terms'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#">{{ 'legal_privacy'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#">{{ 'legal_disclaimer'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#">{{ 'legal_trademarks'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#">{{ 'legal_imprint'|trans }}</a>
- 
-   <!-- <div id="socialNetworks" class="text-center">
-      <a id="shareFB" target="_blank"
-         href="https://www.facebook.com/sharer/sharer.php?u={{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
-         <img class="img-thumbnail btn-xs" src="{{ asset('bundles/app/images/facebook.png') }}" alt="Share on Facebook"/>
-      </a>
-						
-      <a id="shareTW" target="_blank"
-         href="http://twitter.com/home?status={{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
-         <img src="{{ asset('bundles/app/images/twitter.png') }}" alt="Share on Twitter"/>
-      </a>
-   </div>-->
+                <a href="#">{{ 'legal_terms'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">{{ 'legal_privacy'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">{{ 'legal_disclaimer'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">{{ 'legal_trademarks'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">{{ 'legal_imprint'|trans }}</a>
 
-   <hr>
-   <hr>
-
-            <div class="container">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer mt-auto">
-                    <p class="col-md-6 mb-0 text-body-secondary">
-                        &copy; 2024-<script>document.write(new Date().getFullYear())</script> ContentCove :: An opensource CMS project started by JMColeman
-                    </p>
-
-                    <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="{{ path('home') }}" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
-                    </ul>
-                </footer>
-            </div> <!-- end new footer -->
                 {% endblock %}
             </div>
         </section>
