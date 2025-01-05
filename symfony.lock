@@ -40,6 +40,9 @@
             "tests/bootstrap.php"
         ]
     },
+    "shivas/versioning-bundle": {
+        "version": "4.1.1"
+    },
     "symfony/asset-mapper": {
         "version": "6.4",
         "recipe": {

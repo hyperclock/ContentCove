@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="es" datatype="plaintext" original="messages.en.xlf">
+        <body>
+            <trans-unit id="blog_title">            
+                <source>blog_title</source>
+                <target>Proyecto ContentCove CMS</target>
+            </trans-unit>
+            <trans-unit id="blog_tagline">            
+                <source>blog_tagline</source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="nav_home">
+            	<source>nav_home</source>
+            	<target>Inicio</target>
+            </trans-unit>
+            <trans-unit id="nav_about">
+            	<source>nav_about</source>
+            	<target>Acerca de nosotros</target>
+            </trans-unit>
+            <trans-unit id="nav_contact">
+            	<source>nav_contact</source>
+            	<target>Contacto</target>
+            </trans-unit>
+            <trans-unit id="locale_english">            
+                <source>locale_english</source>
+                <target>Inglés</target>
+            </trans-unit>
+            <trans-unit id="locale_german">            
+                <source>locale_german</source>
+                <target>Alemán</target>
+            </trans-unit>
+            <trans-unit id="locale_french">            
+                <source>locale_french</source>
+                <target>Francés</target>
+            </trans-unit>
+            <trans-unit id="locale_spanish">            
+                <source>locale_spanish</source>
+                <target>Español</target>
+            </trans-unit>
+            <trans-unit id="locale_italian">            
+                <source>locale_italian</source>
+                <target>Italiano</target>
+            </trans-unit>
+            <trans-unit id="copyright_title">            
+                <source>copyright_title</source>
+                <target>ContentCove CMS</target>
+            </trans-unit>
+            <trans-unit id="footer_mail_name">            
+                <source>footer_mail_name</source>
+                <target>contacto</target>
+            </trans-unit>
+            <trans-unit id="footer_mail_domain">            
+                <source>footer_mail_domain</source>
+                <target>content-cove.com</target>
+            </trans-unit>
+            <trans-unit id="copyright_name">            
+                <source>copyright_name</source>
+                <target>JMColeman</target>
+            </trans-unit>
+            <trans-unit id="legal_terms">            
+                <source>legal_terms</source>
+                <target>Términos y condiciones de servicio</target>
+            </trans-unit>
+            <trans-unit id="legal_disclaimer">            
+                <source>legal_disclaimer</source>
+                <target>Descargo de responsabilidad</target>
+            </trans-unit> 
+            <trans-unit id="legal_privacy">            
+                <source>legal_privacy</source>
+                <target>Política de privacidad</target>
+            </trans-unit> 
+            <trans-unit id="legal_trademarks">            
+                <source>legal_trademarks</source>
+                <target>Marcas comerciales y licencias</target>
+            </trans-unit>
+            <trans-unit id="legal_imprint">            
+                <source>legal_imprint</source>
+                <target>Aviso legal</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

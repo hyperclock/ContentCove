@@ -1,0 +1,34 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block body %}
+
+<h1>Project Summary</h1>
+<p>The <strong>ContentCove</strong> project aims to develop a fully functional Content Management System (CMS) using Symfony Framework 6.4 LTS. The development process began with the creation of a new Symfony project through their webapp, ensuring flexibility and ease of use. </p>
+
+<h2>Key Features:</h2>
+    <ul>
+        <li><strong>i18n Support:</strong> The CMS will support multiple languages for both UI elements and content stored in the database.</li>
+        <li><strong>Database Storage:</strong> Content such as posts, pages, and comments will be managed using MySQL with Symfony's ORM.</li>
+        <li><strong>Frontend Frameworks:</strong> Twitter Bootstrap is integrated into the themes to ensure a responsive design.</li>
+        <li><strong>Versioning Bundle:</strong> The shivas/versioning-bundle provides version control for content.</li>
+        <li><strong>Languages:</strong> The UI elements are manually translated in language-specific files (e.g., <em>*.en.xlf, *.de.xlf, *.fr.xlf </em>). For backend and frontend translations, using database storage is considered more efficient.</li>
+    </ul>
+
+
+<h2>Suggested Additional Features</h2>
+    <ol>
+        <li><strong>User Management:</strong> Implement user roles and permissions to manage access control.</li>
+        <li><strong>SEO Optimization:</strong> Add meta tags, SEO-friendly URLs, and content optimization tools.</li>
+        <li><strong>Media Manager:</strong> Include a robust media management system for uploading, organizing, and embedding images and videos.</li>
+        <li><strong>Analytics Integration:</strong> Integrate with popular analytics platforms (e.g., Google Analytics) to track website performance.</li>
+        <li><strong>Mobile Optimization:</strong> Ensure the CMS is fully responsive and performs well on mobile devices.</li>
+        <li><strong>Backup &amp; Restore:</strong> Provide tools for backing up content and restoring it in case of data loss.</li>
+    </ol>
+
+<span><p><strong>ContentCove</strong> is released under the <a href="https://github.com/hyperclock/ContentCove/blob/main/LICENSE">MIT License</a>, making it accessible to developers worldwide. The project is hosted on <a href="https://github.com/hyperclock/ContentCove.git">GitHub</a>.</p>
+<p>We invite developers and content managers to explore ContentCove and experience its potential. For more information or support, please visit us at <a href="https://github.com/hyperclock/ContentCove.git">GitHub</a>.
+</p><span>
+
+{% endblock %}
