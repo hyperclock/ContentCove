@@ -1,0 +1,21 @@
+fos_user:
+  db_driver: orm
+  firewall_name: main
+  user_class: App\Entity\User
+  from_email:
+    address: '%env(MAILER_USER_ADDRESS)%'
+    sender_name: '%env(MAILER_USER_NAME)%'
+  registration:
+    form:
+      type: FOS\UserBundle\Form\Type\RegistrationFormType
+    confirmation:
+      enabled: true
+      template: 'FOSUserBundle:Emails:registration.html.twig'
+  resetting:
+    email:
+      from_email:
+        address: '%env(MAILER_USER_ADDRESS)%'
+        sender_name: '%env(MAILER_USER_NAME)%'
+      template: 'FOSUserBundle:Emails:resetting.email.txt.twig'
+  service:
+    mailer: 'fos_user.mailer.noop'
