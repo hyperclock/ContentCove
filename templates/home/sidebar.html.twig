@@ -1,45 +1,50 @@
-<section class="section">
-    <header>
-        <h3>Recent Posts</h3>
-    </header>
-    <p class="tags">
-       Five recent blog posts will be shown here.
-    </p>
-</section>
 
-<section class="section">
-    <header>
-        <h3>Recent Comments</h3>
-    </header>
-    <p class="tags">
-        The five most recent comments will be shown here.
-    </p>
-</section>
+{% block body %}
 
-<section class="section">
-    <header>
-        <h3>Tag Cloud</h3>
-    </header>
-    <p class="tags">
-        We will add 8-15 tags from posts here.
-    </p>
-</section>
+    <section class="section">
+        <header>
+            <h3>{{ 'recent_posts'|trans({}, 'sidebar') }}</h3>
+        </header>
+        <p class="tags">
+        {{ 'recent_posts_text'|trans({}, 'sidebar') }}
+        </p>
+    </section>
 
-<section class="section">
-    <header>
-        <h3>Visitors</h3>
-    </header>
-    <p class="tags">
-        The number of visitors will be shown in this area.
-    </p>
-</section>
+    <section class="section">
+        <header>
+            <h3>{{ 'recent_comment'|trans({}, 'sidebar') }}</h3>
+        </header>
+        <p class="tags">
+            {{ 'recent_comment_text'|trans({}, 'sidebar') }}
+        </p>
+    </section>
 
-{# Below we have the project version showing. Try to keep at the bottom #}
-<section class="section">
-    <header>
-        <h3>ContentCove CMS</h3>
-    </header>
-    <p>
-        <span class="tags">Version:</span>  {{ shivas_app_version }}
-    </p>
-</section>
+    <section class="section">
+        <header>
+            <h3>{{ 'recent_tag_cloud'|trans({}, 'sidebar') }}</h3>
+        </header>
+        <p class="tags">
+            {{ 'recent_tag_cloud_text'|trans({}, 'sidebar') }}
+        </p>
+    </section>
+
+    <section class="section">
+        <header>
+            <h3>{{ 'site_visitors'|trans({}, 'sidebar') }}</h3>
+        </header>
+        <p class="tags">
+            {{ 'site_visitors_text'|trans({}, 'sidebar') }}{{ 'title'|trans({}, 'sidebar') }}
+        </p>
+    </section>
+
+    {# Below we have the project version showing. Try to keep at the bottom #}
+    <section class="section">
+        <header>
+            <h3>ContentCove CMS</h3>
+        </header>
+        <p>
+            <span class="tags">{{ 'contentcove_version'|trans({}, 'sidebar') }}</span>  {{ shivas_app_version }}
+        </p>
+    </section>
+
+{% endblock %}

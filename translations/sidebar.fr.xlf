@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="sidebar.en.xlf">
+        <body>
+            <trans-unit id="recent_posts">            
+                <source>recent_posts</source>
+                <target>Articles Récents</target>
+            </trans-unit>
+            <trans-unit id="recent_posts_text">            
+                <source>recent_posts_text</source>
+                <target>Cinq articles de blog récents seront affichés ici.</target>
+            </trans-unit>
+            <trans-unit id="recent_comment">            
+                <source>recent_comment</source>
+                <target>Commentaires Récents</target>
+            </trans-unit>
+            <trans-unit id="recent_comment_text">            
+                <source>recent_comment_text</source>
+                <target>Les cinq commentaires les plus récents seront affichés ici.</target>
+            </trans-unit>
+            <trans-unit id="recent_tag_cloud">            
+                <source>recent_tag_cloud</source>
+                <target>Nuage de Tags</target>
+            </trans-unit>
+            <trans-unit id="recent_tag_cloud_text">            
+                <source>recent_tag_cloud_text</source>
+                <target>Nous ajouterons 8 à 15 tags de publications ici.</target>
+            </trans-unit>
+            <trans-unit id="site_visitors">            
+                <source>site_visitors</source>
+                <target>Visiteurs</target>
+            </trans-unit>
+            <trans-unit id="site_visitors_text">            
+                <source>site_visitors_text</source>
+                <target>Le nombre de visiteurs sera affiché dans cette zone.</target>
+            </trans-unit>
+            <trans-unit id="contentcove_version">            
+                <source>contentcove_version</source>
+                <target>Version:</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

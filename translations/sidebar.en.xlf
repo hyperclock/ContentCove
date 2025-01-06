@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="sidebar.en.xlf">
+        <body>
+            <trans-unit id="recent_posts">            
+                <source>recent_posts</source>
+                <target>Recent Posts</target>
+            </trans-unit>
+            <trans-unit id="recent_posts_text">            
+                <source>recent_posts_text</source>
+                <target>Five recent blog posts will be shown here.</target>
+            </trans-unit>
+            <trans-unit id="recent_comment">            
+                <source>recent_comment</source>
+                <target>Recent Comments</target>
+            </trans-unit>
+            <trans-unit id="recent_comment_text">            
+                <source>recent_comment_text</source>
+                <target>The five most recent comments will be shown here.</target>
+            </trans-unit>
+            <trans-unit id="recent_tag_cloud">            
+                <source>recent_tag_cloud</source>
+                <target>Tag Cloud</target>
+            </trans-unit>
+            <trans-unit id="recent_tag_cloud_text">            
+                <source>recent_tag_cloud_text</source>
+                <target>We will add 8-15 tags from posts here.</target>
+            </trans-unit>
+            <trans-unit id="site_visitors">            
+                <source>site_visitors</source>
+                <target>Visitors</target>
+            </trans-unit>
+            <trans-unit id="site_visitors_text">            
+                <source>site_visitors_text</source>
+                <target>The number of visitors will be shown in this area.</target>
+            </trans-unit>
+            <trans-unit id="contentcove_version">            
+                <source>contentcove_version</source>
+                <target>Version:</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
