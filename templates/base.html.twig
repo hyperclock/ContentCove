@@ -28,26 +28,51 @@
                 <div class="top">
                     {% block navigation %}
                         <nav>
-<!-- Lang Switcher Dropdown -->
-        <ul class="nav-left">
-            <li>
-                <a href="{{ path('switch_language', { locale: 'en' }) }}"><img src="{{ asset('assets/images/flags/us.png') }}"> {{ 'locale_english'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('switch_language', { locale: 'de' }) }}"><img src="{{ asset('assets/images/flags/de.png') }}"> {{ 'locale_german'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('switch_language', { locale: 'fr' }) }}"><img src="{{ asset('assets/images/flags/fr.png') }}"> {{ 'locale_french'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('switch_language', { locale: 'es' }) }}"><img src="{{ asset('assets/images/flags/es.png') }}"> {{ 'locale_spanish'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('switch_language', { locale: 'it' }) }}"><img src="{{ asset('assets/images/flags/it.png') }}"> {{ 'locale_italian'|trans }}</a>
-            </li>
-        </ul>
-<!-- END - Lang Switcher Dropdown --> 
 
+                <!-- Custom Lang Switcher Dropdown -->
+                        <div class="dropdown language-selector">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                {% if app.request.locale == 'en' %}
+                                    <img src="{{ asset('assets/images/flags/us.png') }}" alt="English"> English
+                                {% elseif app.request.locale == 'de' %}
+                                    <img src="{{ asset('assets/images/flags/de.png') }}" alt="Deutsch"> Deutsch
+                                {% elseif app.request.locale == 'fr' %}
+                                    <img src="{{ asset('assets/images/flags/fr.png') }}" alt="Français"> Français
+                                {% elseif app.request.locale == 'es' %}
+                                    <img src="{{ asset('assets/images/flags/es.png') }}" alt="Español"> Español
+                                {% elseif app.request.locale == 'it' %}
+                                    <img src="{{ asset('assets/images/flags/it.png') }}" alt="Italiano"> Italiano
+                                {% endif %}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="{{ path('switch_language', { locale: 'en' }) }}">
+                                        <img src="{{ asset('assets/images/flags/us.png') }}" alt="English"> English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ path('switch_language', { locale: 'de' }) }}">
+                                        <img src="{{ asset('assets/images/flags/de.png') }}" alt="Deutsch"> Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ path('switch_language', { locale: 'fr' }) }}">
+                                        <img src="{{ asset('assets/images/flags/fr.png') }}" alt="Français"> Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ path('switch_language', { locale: 'es' }) }}">
+                                        <img src="{{ asset('assets/images/flags/es.png') }}" alt="Español"> Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ path('switch_language', { locale: 'it' }) }}">
+                                        <img src="{{ asset('assets/images/flags/it.png') }}" alt="Italiano"> Italiano
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                <!-- END - Custom Lang Switcher Dropdown -->
                             <ul class="navigation">
                                 <li><a href="{{ path('app_home') }}">{{ 'nav_home'|trans }}</a></li>
                                 <li><a href="#">{{ 'nav_about'|trans }}</a></li>

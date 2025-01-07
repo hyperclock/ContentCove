@@ -18,4 +18,5 @@ class LanguageController
 
         return new RedirectResponse($referer ?: '/');
     }
+
 }

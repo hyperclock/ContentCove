@@ -232,10 +232,22 @@ body {
     margin-bottom: 20px;
 }
 
+/* FOOTER */
 #footer {
     border-top: 1px solid #ccc;
     clear: both;
     text-align: center;
     padding: 10px;
     color: #aaa;
+}
+
+/* LANGUAGE */
+.language-selector {
+    display: inline-block;
+    margin: 0;
+}
+
+#locale-dropdown {
+    padding: 5px;
+    font-size: 14px;
 }
