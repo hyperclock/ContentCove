@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="user.en.xlf">
+        <body>
+            <trans-unit id="user_login">            
+                <source>user_login</source>
+                <target>Connexion</target>
+            </trans-unit> 
+            <trans-unit id="user_logout">            
+                <source>user_logout</source>
+                <target>Déconnexion</target>
+            </trans-unit>
+            <trans-unit id="user_register">            
+                <source>user_register</source>
+                <target>Inscription</target>
+            </trans-unit>
+            <trans-unit id="user_signin">            
+                <source>user_signin</source>
+                <target>Please sign in</target>
+            </trans-unit>
+            <trans-unit id="user_email">            
+                <source>user_email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="user_pass">            
+                <source>user_pass</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="user_signin_btn">            
+                <source>user_signin_btn</source>
+                <target>Sign in</target>
+            </trans-unit>
+            <trans-unit id="user_loggedin_as">            
+                <source>user_loggedin_as</source>
+                <target>You are logged in as</target>
+            </trans-unit>
+            <trans-unit id="please_confirm_email">            
+                <source>please_confirm_email</source>
+                <target>Hi! Please confirm your email!</target>
+            </trans-unit>
+            <trans-unit id="confirm_by_click">            
+                <source>confirm_by_click</source>
+                <target>Please confirm your email address by clicking the following link</target>
+            </trans-unit>
+            <trans-unit id="confirm_my_email">            
+                <source>confirm_my_email</source>
+                <target>Confirm my Email</target>
+            </trans-unit>
+            <trans-unit id="link_expire">            
+                <source>link_expire</source>
+                <target>This link will expire in</target>
+            </trans-unit>
+            <trans-unit id="nice_goodbye">            
+                <source>nice_goodbye</source>
+                <target>Cheers!</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
