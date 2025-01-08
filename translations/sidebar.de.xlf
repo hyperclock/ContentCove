@@ -20,7 +20,7 @@
             </trans-unit>
             <trans-unit id="recent_tag_cloud">            
                 <source>recent_tag_cloud</source>
-                <target>Tag Cloud</target>
+                <target>Schlagwortwolke</target>
             </trans-unit>
             <trans-unit id="recent_tag_cloud_text">            
                 <source>recent_tag_cloud_text</source>
@@ -37,6 +37,10 @@
             <trans-unit id="contentcove_version">            
                 <source>contentcove_version</source>
                 <target>Version:</target>
+            </trans-unit>
+            <trans-unit id="follow_us">            
+                <source>follow_us</source>
+                <target>Folgen Sie Uns</target>
             </trans-unit>
         </body>
     </file>

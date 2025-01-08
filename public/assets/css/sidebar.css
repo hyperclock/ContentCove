@@ -1,6 +1,5 @@
 .sidebar .section {
     margin-bottom: 20px;
-    min-height: 100px;
 }
 
 .sidebar h3 {
@@ -14,7 +13,7 @@
 
 .sidebar p {
     line-height: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 

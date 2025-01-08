@@ -38,6 +38,10 @@
                 <source>contentcove_version</source>
                 <target>Version:</target>
             </trans-unit>
+            <trans-unit id="follow_us">            
+                <source>follow_us</source>
+                <target>Follow Us</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
