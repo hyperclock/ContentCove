@@ -7,7 +7,6 @@ ContentCove is an open-source CMS built using the Symfony Framework, designed fo
 ### Prerequisites
 - PHP 8.1 or higher
 - Composer
-- Node.js and npm
 - MySQL/MariaDB
 
 ### Installation
@@ -35,21 +34,22 @@ bin/console doctrine:migrations:migrate
 
 5. Load fixtures (optional):
    
+```bash
+php bin/console doctrine:fixtures:load
+```
+* If you want to append fixtures instead of clearing the database, you can use the --append option.
 
-
-6. Install frontend dependencies using npm:
-   
-```bash 
-npm install
+```bash
+php bin/console doctrine:fixtures:load --append
 ```
 
-7. Build the assets:
+6. Clear the cache
 
-```bash 
-npm run build
+```bash
+php bin/console cache:clear
 ```
 
-8. Start the Symfony server:
+7. Start the Symfony server:
    
 ```bash 
 symfony server:start
@@ -72,13 +72,11 @@ symfony server:start
 ## Dependencies
 
 Ensure you have the following dependencies installed:
-- PHP (7.4 or higher)
+- PHP (8.1 or higher)
 - Composer
-- Node.js and npm
 - MySQL/MariaDB
 
 Run `composer install` to install all required PHP packages.
-Run `npm install` followed by `npm run build` to set up frontend assets.
 
 ## Configuration
 
