@@ -121,20 +121,22 @@
             <section class="main-col">
                 {% block body %}{% endblock %}
             </section>
+            
             <aside class="sidebar">
                 {% block sidebar %}{% endblock %}
             </aside>
  
             <div id="footer">
                 {% block footer %}
-               {{ 'copyright_title'|trans }} &copy; 2024-{{ "now" | date("Y") }} <a href="mailto://{{ 'footer_mail_name'|trans }}@{{ 'footer_mail_domain'|trans }}">{{ 'copyright_name'|trans }}</a> | ContentCove::An opensource CMS project
-                    <br><br>
-                <a href="#">{{ 'legal_terms'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="#">{{ 'legal_privacy'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="#">{{ 'legal_disclaimer'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="#">{{ 'legal_trademarks'|trans }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="#">{{ 'legal_imprint'|trans }}</a>
-
+                {{ 'copyright_title'|trans }} &copy; 2024-{{ "now" | date("Y") }} <a href="mailto://{{ 'footer_mail_name'|trans }}@{{ 'footer_mail_domain'|trans }}">{{ 'copyright_name'|trans }}</a> | ContentCove::An opensource CMS project
+                        
+                    <ul class="list-inline footer-links mt-3">
+                        <li class="list-inline-item"><a href="#">{{ 'legal_terms'|trans }}</a></li> <i class="fa-regular fa-circle-dot"></i> 
+                        <li class="list-inline-item ms-2"><a href="#">{{ 'legal_privacy'|trans }}</a></li> <i class="fa-regular fa-circle-dot"></i> 
+                        <li class="list-inline-item ms-2"><a href="#">{{ 'legal_disclaimer'|trans }}</a></li> <i class="fa-regular fa-circle-dot"></i> 
+                        <li class="list-inline-item ms-2"><a href="#">{{ 'legal_trademarks'|trans }}</a></li> <i class="fa-regular fa-circle-dot"></i> 
+                        <li class="list-inline-item ms-2"><a href="#">{{ 'legal_imprint'|trans }}</a></li>
+                    </ul>
                 {% endblock %}
             </div>
         </section>
