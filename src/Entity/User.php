@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -27,7 +28,34 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private string $password;
 
     #[ORM\Column]
-    private bool $isVerified = false;
+    private ?bool $isVerified = false;
+
+    #[ORM\Column(length: 180, nullable: true)]
+    private ?string $firstname = null;
+
+    #[ORM\Column(length: 180, nullable: true)]
+    private ?string $lastname = null;
+
+    #[ORM\Column(length: 200, nullable: true)]
+    private ?string $user_url = null;
+
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    private ?\DateTimeInterface $reg_date = null;
+
+    #[ORM\Column]
+    private ?bool $user_status = false;
+
+    #[ORM\Column(length: 100, nullable: true)]
+    private ?string $username = null;
+
+    #[ORM\Column(length: 2, nullable: true)]
+    private ?string $language = null;
+
+
+    public function __construct()
+    {
+        $this->reg_date = new \DateTime(); // Automatically set the current date and time
+    }
 
     public function getId(): ?int
     {
@@ -63,7 +91,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        $roles[] = "ROLE_USER";
 
         return array_unique($roles);
     }
@@ -110,4 +138,88 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
+    public function getFirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstname(string $firstname): static
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(?string $lastname): static
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    public function getUserUrl(): ?string
+    {
+        return $this->user_url;
+    }
+
+    public function setUserUrl(?string $user_url): static
+    {
+        $this->user_url = $user_url;
+
+        return $this;
+    }
+
+    public function getRegDate(): ?\DateTimeInterface
+    {
+        return $this->reg_date;
+    }
+
+    public function setRegDate(\DateTimeInterface $reg_date): self
+    {
+        $this->reg_date = $reg_date;
+        return $this;
+    }
+
+    public function getUserStatus(): ?bool
+    {
+        return $this->user_status;
+    }
+
+    public function setUserStatus(bool $user_status): static
+    {
+        $this->user_status = $user_status;
+
+        return $this;
+    }
+
+    public function getUsername(): ?string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(?string $username): static
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    public function getLanguage(): ?string
+    {
+        return $this->language;
+    }
+
+    public function setLanguage(?string $language): static
+    {
+        $this->language = $language;
+
+        return $this;
+    }
+
 }
